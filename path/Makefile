@@ -12,6 +12,8 @@ makefiles:
 # 获取当前makefile
 lastmakefile:
 	echo $(lastword $(MAKEFILE_LIST))
+firstmakefile:
+	echo $(firstword $(MAKEFILE_LIST))
 # 获取当前makefile的绝对路径
 abs:
 	echo $(abspath $(lastword $(MAKEFILE_LIST)))
